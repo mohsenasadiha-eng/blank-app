@@ -4,24 +4,8 @@ from pathlib import Path
 
 st.set_page_config(page_title="StandUp Reels Studio", page_icon="🎤")
 st.title("🎤 StandUp Reels Studio")
-try:
-    password = str(st.secrets.get("APP_PASSWORD", ""))
-except Exception:
-    password = ""
-if not password:
-    st.warning("Accesso bloccato. Configura APP_PASSWORD nelle impostazioni Secrets di Streamlit.")
-    st.stop()
-if not st.session_state.get("auth"):
-    with st.form("login"):
-        p = st.text_input("Password", type="password")
-        if st.form_submit_button("Accedi"):
-            if hmac.compare_digest(p, password):
-                st.session_state.auth = True
-                st.rerun()
-            else:
-                st.error("Password errata")
-    st.stop()
-if st.button("Esci e cancella sessione"):
+st.warning("Non caricare video riservati se l’app Streamlit è pubblica. Verifica le impostazioni Sharing.")
+if st.button("Cancella sessione"):
     st.session_state.clear()
     st.rerun()
 
