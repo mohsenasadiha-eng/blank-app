@@ -1,0 +1,23 @@
+GUIDA RAPIDA — PUBBLICAZIONE ONLINE PRIVATA E GRATUITA
+
+PRIMA DI INIZIARE
+Servono un account GitHub e un account Streamlit Community Cloud. Non condividere password o codici di accesso in chat.
+
+1) Scarica ed estrai lo ZIP.
+2) Su GitHub crea un nuovo repository. Scegli il nome standup-reels-studio e seleziona PRIVATE.
+3) Carica nel repository TUTTI i file e le cartelle estratti. Non caricare video personali nel repository.
+4) Apri https://share.streamlit.io/ e accedi con GitHub.
+5) Premi Create app.
+6) Scegli il repository appena creato.
+7) Main file path: app/studio.py
+8) Premi Deploy.
+9) Quando l'app è partita, apri App settings > Sharing e controlla che sia privata (Only specific people).
+10) Apri il link .streamlit.app e accedi.
+
+IMPORTANTE SULLA PRIVACY
+Il repository privato protegge il codice. L'app privata protegge l'accesso all'interfaccia. I video caricati vengono comunque inviati al server per l'elaborazione. Il piano gratuito usa storage temporaneo: scarica gli export appena pronti.
+
+LIMITI
+Upload 200 MB per file; modello tiny consigliato; video lunghi possono essere troppo pesanti per le risorse gratuite. Non usare per materiale riservato o per cui non hai autorizzazione.
+
+Se il deploy fallisce, non pubblicare il repository: manda uno screenshot dell'errore (coprendo email, token e dati personali).
